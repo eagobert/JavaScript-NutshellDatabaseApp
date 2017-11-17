@@ -5,7 +5,12 @@ const localInterface = require("../scripts/loadDatabase")
 
 const nutShellDB = function (){
     // //set database to = whatever is in local storage
-    let database = JSON.parse(localStorage.getItem("nutShellDB"))
+    // let database = JSON.parse(localStorage.getItem("nutShellDB"))
+
+    //Load Database.....(Erin)
+    const loadDatabase = localInterface.load;
+    const database =loadDatabase("nutShellDB");
+
         if (database !== null){
             console.log("we have localstorage")
             console.log(database)
