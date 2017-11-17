@@ -1,8 +1,11 @@
 //Author Ray - this module checks for the existence of a database in local storage if none exists it creates an empty database
 
+// Required Files....(Erin)
+const localInterface = require("../scripts/loadDatabase")
+
 const nutShellDB = function (){
     // //set database to = whatever is in local storage
-    // let database = JSON.parse(localStorage.getItem("nutShellDB"))
+    let database = JSON.parse(localStorage.getItem("nutShellDB"))
         if (database !== null){
             console.log("we have localstorage")
             console.log(database)

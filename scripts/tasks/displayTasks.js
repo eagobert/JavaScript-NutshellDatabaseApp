@@ -3,13 +3,11 @@
 //Purpose:  Module to display task list
 
 /* Required Files*/
-const db = require("../nutShellDB")
 const localInterface = require("../loadDatabase")
 
 //Load Database
 const loadDatabase = localInterface.load;
 const database =loadDatabase();
-
 
 //Create function to show task, requiring input of the database
 const displayTasks = function (database){
